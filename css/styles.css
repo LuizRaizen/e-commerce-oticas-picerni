@@ -1,0 +1,765 @@
+/* Centraliza o conteúdo da página */
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+
+/* Define a fonte geral dos textos da página */
+
+body {
+    font-family: 'Helvetica', sans;
+}
+
+/* Definições gerais do cabeçalho */
+
+header {
+    position: relative;
+    padding: 10px 0;
+}
+
+/* Definições do logo do cabeçalho */
+
+header img {
+    width: 330px;
+    height: 150px;
+}
+
+/* Definições da área do cliente */
+
+.client-area {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 100px;
+    height: 42px;
+}
+
+.login-logout {
+    clear: both;
+    float: right;
+}
+
+.cart {
+    float: left;
+}
+
+.cart a {
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-image: url(../img/icon-cart-circle.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 100px;
+    text-indent: -9999px;
+    transition: 150ms ease-out;
+}
+
+.cart a:hover {
+    transform: scale(1.2);
+    transition: 150ms ease-in;
+}
+
+.login-logout a {
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-image: url(../img/icon-user-circle.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: invert(20%);
+    border-radius: 100px;
+    text-indent: -9999px;
+    transition: 150ms ease-out;
+}
+
+.login-logout a:hover {
+    transform: scale(1.2);
+    transition: 150ms ease-in;
+}
+
+/* Definições do menu de opções do cabeçalho */
+
+.main-options ul {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 20px;
+}
+
+.main-options li a {
+    opacity: 60%;
+    transition: 150ms ease-out;
+}
+
+.main-options li a:hover {
+    opacity: 100%;
+    transition: 150ms ease-in;
+}
+
+.main-options ul li {
+    display: inline;
+}
+
+.main-options a {
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #303030c5
+}
+
+.main-options li[name="sep"]:after {
+    padding: 0 25px;
+    content: "|";
+}
+
+/* Definições da barra de pesquisa  */
+
+.search {
+    color: #FFFFFF;
+    background-color: #303030c5;
+    border-bottom: 1px solid #FFFFFF;
+    width: 278px;
+    padding: 20px;
+}
+
+.search h2 {
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.search input {
+    width: 235px; 
+    color: #FFFFFF;
+    background-color: #303030c5;
+    opacity: 60%;
+    border-radius: 20px;
+    padding: 5px 5px 5px 10px;
+    border: none;
+    transition: 200ms ease-in;
+}
+
+.search input:hover,
+.search input:focus {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: 200ms ease-in;
+}
+
+.search button {
+    border: none;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/searching-magnifying-glass.png);
+    background-color: transparent;
+    background-size: 100%;
+    filter: invert(100%);
+    opacity: 60%;
+    text-indent: -9999px;
+    margin-left: 15px;
+    transition: 50ms ease-out;
+}
+
+.search button:hover {
+    opacity: 100%;
+    transform: scale(1.4) rotate(-5deg);
+    transition: 150ms ease-in;
+}
+
+/* Definições da área do conteúdo principal */
+
+.main-content {position: relative;}
+
+/* Definições do menu de navegação */
+
+.main-menu {
+    clear: left;
+    float: left;
+    width: 319px;
+    height: 375px;
+    margin-top: 1px;
+    background-color: #303030c5;
+}
+
+.main-menu li {
+    list-style: none;
+    font-weight: bold;
+    padding: 15px 20px 0 0;
+    border-bottom: 1px solid #303030c5;
+    background-color: #FFFFFF;
+}
+
+.main-menu li[name="label"] {
+    padding: 15px 20px 10px 20px;
+    background-color: #303030c5;
+}
+
+.main-menu h2 {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.main-menu ul ul {
+    display: none;
+}
+
+.main-menu li:hover ul {
+    display: block;
+}
+
+.main-menu ul li ul a {
+    opacity: 50%;
+    transition: 120ms ease-out;
+}
+
+.main-menu ul li ul a:hover {
+    opacity: 100%;
+    transition: 120ms ease-in;
+}
+
+.main-menu ul ul li a {
+    color: #FFFFFF;
+}
+
+.main-menu ul ul li {
+    width: 300px;
+    background-color: #303030c5;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.main-menu  a,
+.main-menu h3 {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #303030c5;
+    padding-left: 20px;
+}
+
+/* Definições do banner de destaque */
+
+.main-banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 616px;
+    height: 470px;
+}
+
+.main-banner img {
+    width: 616px;
+    height: 470px;
+}
+
+.main-banner figcaption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 616px;
+    height: 70px;
+    font-family: 'Georgia';
+    text-align: center;
+    text-shadow: 3px 3px 4px #000000;
+    padding-top: 65%;
+    color: #FFFFFF;
+    background-image: 
+        linear-gradient(to top, rgba(0,0,0), transparent, transparent),
+        linear-gradient(rgba(0,0,0,.2), transparent, transparent);
+    opacity: 0%;
+    transition: opacity 320ms ease-out;
+}
+
+.main-banner figcaption:hover {
+    opacity: 100%;
+    transition: opacity 320ms ease-in;
+}
+
+/* Definições dos painéis */
+
+.panels {
+    clear: both;
+    position: relative;
+    margin: 30px auto;
+}
+
+.panel {
+    width: 414px;
+    padding: 25px;
+    margin: 20px auto;
+}
+
+.panel h2 {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #060606c5;
+}
+
+.panel ol {
+    margin: 10px 10px 25px 10px;
+}
+
+.panel h2 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.panel li {
+    margin: 8px;
+    transition: 100ms ease-in;
+}
+
+.panel li:hover {
+    transform: scale(1.1);
+    transition: 100ms ease-in;
+}
+
+.panel ol li {
+    display: inline-block;
+}
+
+.panel img {
+    width: 108px;
+    height: 108px;
+}
+
+.panel figcaption {
+    width: 105px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.panel a {
+    text-decoration: none;
+    color: #303030c5;
+}
+
+.more {
+    float: right;
+    font-weight: bold;
+}
+
+.releases {
+    float: left;
+    background-color: #FFFFFF;
+}
+
+.best-sellers {
+    float:right;
+    background-color: #FFFFFF;
+}
+
+/* Seção newsletter */
+
+.newsletter {
+    clear: both;
+    padding: 40px 170px 40px 170px;
+    margin-bottom: 1px;
+    background-color: #d8d8d8c5;
+    margin-bottom: 0px;
+}
+
+.newsletter h2 {
+    padding: 0 68px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #060606c5;
+}
+
+.newsletter input {
+    width: 400px;
+    height: 60px;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #06060699;
+    transition: 120ms ease-out;
+}
+
+.newsletter input:hover,
+.newsletter input:focus {
+    margin-right: 5px;
+    background-color: #060606c5;
+    transform: scale(1.05);
+    transition: 120ms ease-in;
+}
+
+.newsletter button {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 180px;
+    height: 60px;
+    margin-left: 10px;
+    color: #FFFFFF;
+    background-color: #179919d2;
+    border: hidden;
+    border-radius: 10px;
+    border-color: #179919ab;
+    transition: 120ms ease-out;
+}
+
+.newsletter button:hover {
+    background-color: #179919;
+    transform: scale(1.05);
+    transition: 120ms ease-in;
+}
+
+/* Definições do conteúdo flutuante */
+
+.whatsapp {
+    position: fixed;
+    right: 30px;
+    bottom: 25px;
+    display: block;
+    background-image: url("../img/icon-whatsapp.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 80px;
+    height: 80px;
+    text-indent: -9999px;
+    transition: 120ms ease-out;
+}
+
+.whatsapp:hover{
+    transform: scale(1.2) rotate(-10deg);
+    transition: 200ms ease-in;
+}
+
+/* Definições do rodapé */
+
+footer {
+    clear: both;
+    background-color: #000000;
+}
+
+footer .container {
+    position: relative;
+    letter-spacing: 2px;
+    padding: 20px;
+    color: #FFFFFF
+}
+
+footer img {
+    width: 173px;
+    height: 83px;
+}
+
+.container p {
+    font-size: 12px;
+    text-align: right;
+    margin: 120px auto 5px auto;
+}
+
+.container section+p {
+    position: absolute;
+    left: 20px;
+    bottom: 2px;
+    margin-bottom: 35px;
+    display: block;
+    width: 320px;
+    height: 50px;
+    background-image: url("../img/formas-de-pagamento.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.social p {
+    font-size: 18px;
+    text-align: right;
+    margin: 0 6px 0 0;
+}
+
+.social ul {position: absolute; right: 0;}
+
+.social ul li {
+    float: left;
+    margin: 10px;
+}
+
+.social ul li a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+}
+
+.social ul li a[href*="facebook.com"] {
+    background-image: url("../img/icon-fb-colorido.png");   
+}
+
+.social ul li a[href*="instagram.com"] {
+    background-image: url("../img/icon-insta-colorido.png");    
+}
+
+.social {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+/* Sombras dos elementos */
+
+.search,
+.main-menu, 
+.main-banner img, 
+.panel,
+.panel img,
+.newsletter {
+    box-shadow: 1px 1px 5px #414141c5;
+}
+
+/* Estilos do modo mobile */
+
+@media (max-width: 939px) {
+		 /* Definições de .container */
+    .container {
+        width: 100%;
+    }
+    
+    /* Definições do cabeçalho */
+
+    header {
+        position: relative;
+        margin: 0;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    header img {
+    		margin-top: 90px;
+    }
+
+    .client-area {
+        width: 100%;
+        padding: 3px 0 25px 0;
+    }
+    
+    .client-area ul li {
+    		padding: 0 4px;
+    }
+    
+    .cart {
+    		float: right;
+    }
+    
+    .login-logout {margin-right: 16px;}
+    
+    .main-options ul {
+    		position: static;
+    		width: 100%;
+    		padding-bottom: 0;
+    		margin: 20px auto;
+    		text-align: center;
+    }
+    
+    .main-options li[name="sep"]:after {
+    		padding: 0 15px;
+  		  content: "|";
+		 }
+    
+    .main-options a {
+    		font-size: 15px;
+    }
+    
+    /* Definiçõe de .main-content */
+    
+    .search {
+        width: 100%;
+        padding: 5% 0;
+    }
+    
+    .search h2 {
+    		margin-left: 6%;
+    }
+
+    .search input {
+        width: 72%;
+        margin: 10px 20px;
+    }
+    
+    .search button {
+    		margin: 0 2%;
+    		padding: 0;
+    }
+    
+    /* Definições de .main_menu */
+    
+    .main-menu {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 4%;
+        float: none;
+        border-bottom: 2px solid #FFF;
+    }
+    
+    .main-menu ul ul li {
+    		width: 100%;
+    		background-color: #303030c5;
+    		border-bottom: 1px solid #FFFFFF;
+		 }
+    
+    /* Definições de .main-banner */
+    
+    .main-content {
+    		
+    }
+    
+    .main-banner {
+    		position: relative;
+    		width: 100%;
+    		height: 50%;
+    }
+    
+    .main-banner img {
+    		width: 100%;
+    		height: 100%;
+    }
+    
+    .main-banner figcaption {
+    		width: 100%;
+    		height: 18%;
+    		padding-top: 65%;
+    } 
+    
+    .panels {
+    		margin: 5% 0;
+    }
+    
+    .panel {
+    		width: 95%;
+    		padding: 0 0 18% 0;
+    		margin: 0 2% 6% 2.5%;
+    }
+    
+    .panel ol {
+    		padding: 0;
+    		margin: 0;
+    		text-align: center;
+    }
+    
+    .panel h2 {
+    		padding: 3% 0 5% 5%;
+    }
+    
+    .panel li {
+    		width: 27%;
+    		height: 27%;
+    		margin: 1.5% 1.5%;
+    		font-size: 14px;
+    }
+    
+    .panel img {
+    		width: 100%;
+    		height: 100%;
+    }
+    
+    .panel figcaption {
+    		width: 100%;
+    		text-align: center;
+    }
+    
+    .releases {float: none;}
+    
+    .best-sellers {float: none;}
+    
+    .panel > a {
+    		margin: 8% 5% 10% 0;
+    }
+    
+    .newsletter {
+    		width: 95%;
+    		padding: 5% 0;
+    		margin: 0 2% 0 2.5%;
+    }
+    
+    .newsletter h2 {
+    		font-size: 14px;
+    		width: 100%;
+    		text-align: center;
+    		padding: 0 0 8% 0;
+    		margin: 0;
+    }
+    
+    .newsletter input {
+    		width: 90%;
+    		height: 50px;
+    		margin: auto 5% 2% 5%;
+    }
+    
+    .newsletter button {
+    		width: 90%;
+    		height: 40px;
+    		margin: auto 5%;
+    }
+    
+    footer .container {
+    		position: static;
+    		width: auto;
+    		padding: 0;
+    }
+    
+    footer .container img {
+    		margin: 10% 25%; 0 25%;
+    }
+    
+    .social {
+    		position: static;
+    		margin: 10% 0 0 0 ;
+    }
+    
+    .social ul {
+    		float: none;
+    		padding: 0 35%;
+    }
+    
+    .social p {
+    		text-align: center;
+    		margin: 0;
+    }
+    
+    .container .social + p {
+    		position: static;
+    		text-align: center;
+    }
+    
+    .container p {
+    		margin: 0 auto;
+    }
+    
+    .container .social + p {
+    		margin-top: 30%;
+    }
+    
+    .container section ~ p {
+    		margin-top: 28%;
+    }
+    
+    .container > p {
+    		text-align: center;
+    }
+    
+    footer {
+    		padding-bottom: 10%;
+    }
+    
+    .whatsapp {
+    		bottom: 3%;
+    		right: 5%;
+    }
+}
